@@ -1,0 +1,12 @@
+1 - Abrir o console no VSCode apertando CTRL + J e escrever:
+
+npm install -D tailwindcss
+
+DEPOIS:
+
+npx tailwindcss init
+
+2 - Iniciar o Tailwind:
+
+npx tailwindcss -i ./css/input.css -o ./css/output.css --watch
+

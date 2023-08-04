@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <title>Home</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Lastica';
+            src: url('./assets/FontsFree-Net-Lastica.ttf') format('opentype'), url('./assets/FontsFree-Net-Lastica.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'Lastica', sans-serif;
+            color: white;
+
+        }
+
+        body {
+            background-image: url('./imgs/background.png');
+            background-size: cover;
+            background-position: center;            
+        }
+
+        .custom__glow {
+            text-shadow: 0 0 10px rgb(159, 88, 225), 0 0 30px rgb(121, 73, 165);
+        }
+
+        .hero__image {
+            filter: drop-shadow(0 0 40px rgb(98, 61, 134));
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen">
+    <div class="header backdrop-blur bg-transparent top-0 fixed flex items-center justify-center w-full h-24 gap-6">
+        <button class="navtoggler md:hidden">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+        <ul class="hidden md:flex text-xs gap-6 md:text-sm">
+            <a href="videos.html" class="cursor-pointer">VIDEOS</a>
+            <a href="./index.html" class="cursor-pointer">HOME</a>
+        </ul>
+        <div class="logo sm:block">
+            <img class="w-40 h-40 md:w-52 md:h-52" src="./imgs/logo.png" alt="Logo escrito 'InCode'">
+        </div>
+        <ul class="hidden md:flex text-xs gap-6 md:text-sm">
+            <a href="https://discord.gg/kAGaWHVG" class="cursor-pointer">COMUNIDADE</a>
+            <a href="https://incodeetecmcm.blogspot.com/p/rascunho.html" class="cursor-pointer">SOBRE NOS</a>
+        </ul>
+    </div>
+    <div class="container flex items-center justify-center mt-24 flex-wrap md:mt-0 md:gap-10">
+        <div class="hero__description flex flex-col gap-4">
+            <div class="description">
+                <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">APRENDER</h1>
+                <div class="flex items-center justify-center gap-3 custom__glow">
+                    <h1 class="text-8xl font-bold text-purple-500 md:text-8xl lg:text-9xl">O</h1>
+                    <h2 class="text-2xl font-bold"><span class="text-4xl leading-3 text-purple-500 md:text-5xl lg:text-6xl">NOVO</span> <br> <span class="text-3xl text-purple-500 md:text-4xl lg:text-5xl">MUNDO</span></h2>
+                </div>
+            </div>
+            <div class="buttons flex items-center justify-center gap-3 lg:gap-5">
+                <a href="./cadastro/login/login.html" class="button cursor-pointer rounded-lg font-bold text-xs bg-purple-700 pt-2 pb-2 pl-4 pr-4 lg:pt-4 lg:pb-4 lg:pl-6 lg:pr-6 transition hover:bg-purple-800">
+                    ENTRAR
+                </a>
+                <a href="./cadastro/cadastro.html" class="button cursor-pointer rounded-lg font-bold text-xs bg-slate-300 text-black pt-2 pb-2 pl-4 pr-4 lg:pt-4 lg:pb-4 lg:pl-6 lg:pr-6 transition hover:bg-slate-400">
+                    CADASTRAR
+                </a>
+            </div>
+        </div>
+        <div>
+            <img class="hero__image h-64 w-64 md:h-72 md:w-72 lg:h-80 lg:w-80" loading="lazy" src="imgs/frontpage.png" alt="Imagem representativa de um computador">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e1f7a1b8d0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

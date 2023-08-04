@@ -1,0 +1,167 @@
+:root {
+  --clr-dark: #350044;
+  --clr-light: #f1f5f9;
+  --clr-accent: #8c00af;
+  --clr-neon: #9001b6;
+  background-image: url("imgs/aprender.png");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  word-spacing: 1.5px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+  place-items: center;
+  background: var(--clr-bg);
+  color: var(--clr-neon);
+  
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: 0px solid var(--clr-dark);
+}
+
+.hero__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#videos {
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 750px;
+  gap: px;
+  background-image: url("fundovideo.jpg");
+}
+
+.item {
+  width: 140px;
+  height: 120px;
+  font-weight: 700;
+  color: var(--clr-light);
+  text-align: center;
+  border-radius: 10px;
+  margin: 25px 10px;
+  position: relative;
+}
+
+.item:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00000000, #000000c4);
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.item>img {
+  border-radius: 10px;
+}
+
+.image-reset {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__title {
+  position: absolute;
+  z-index: 99;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+
+.sub__title {
+  font-size: 15px;
+}
+
+.neon-button {
+  font-size: 2rem;
+  background-image: url("imgs/fundovideo.jpg");
+  background-size: 150%;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  height: 450px;
+  width: 450px;
+  border-radius: 0.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 25px;
+  margin-right:60px;
+
+  text-shadow:
+    0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em currentColor;
+
+  box-shadow: 0 0 0.5em 0 var(--clr-neon), inset 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+  transition: 1s ease-in-out;
+}
+
+.neon-button>img {
+  position: relative;
+  z-index: 99;
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.neon-button>p {
+  position: relative;
+  z-index: 99;
+  font-size: 25px;
+  color: white;
+}
+
+.neon-button:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#00000049, #000000c4);
+  z-index: 10;
+  transition: 1s;
+}
+
+.neon-button:hover>.neon-button:after {
+  background: linear-gradient(#000000ac, #000000c4);
+}
